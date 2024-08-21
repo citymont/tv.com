@@ -4,9 +4,12 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "postbuild": "cp -r public/* dist/"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "2.12.0",
+    "@parcel/transformer-jsonld": "2.12.0",
     "parcel": "^2.12.0"
   }
 }
