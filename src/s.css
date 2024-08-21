@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'gt';
+    src: url('/src/GT-Pressura-Mono-Light.woff2') format('woff2'),
+    url('/src/GT-Pressura-Mono-Light.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --font-gt: 'gt';
+  --pix: 12px;
+  text-transform: uppercase;
+}
+
+body {
+  margin:10px;
+  font-family: var(--font-gt);
+  color: rgb(var(--foreground-rgb));
+  overscroll-behavior: none;
+  background: linear-gradient(301deg, #c97411, #eedd45, #bb4715, #eedd45);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 55s ease infinite;
+  -moz-animation: AnimationName 55s ease infinite;
+  animation: AnimationName 55s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:68% 0%}
+    50%{background-position:3% 10%}
+    100%{background-position:68% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:68% 0%}
+    50%{background-position:3% 10%}
+    100%{background-position:68% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:68% 0%}
+    50%{background-position:3% 10%}
+    100%{background-position:68% 0%}
+}
+main {
+    max-width: 50vw;
+}
+@media (min-width: 600px) {
+    main {
+        max-width: 25vw;
+    }
+}
+a {
+    color: black;
+}
+section {
+    margin-bottom:calc(var(--pix) * 6);
+}
+label {
+  display: block;
+  text-transform: lowercase;
+  font-size: calc( var(--pix));
+  letter-spacing: 0.40em;
+  margin-bottom:calc(var(--pix) * 3);
+}
+.logo  {
+    max-width: 50vw;
+    display:block;
+}
+.logo img {
+    width: 100%;
+}
+p {
+    font-size: var(--pix);
+}
